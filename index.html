@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>黒川温泉 | 癒しのひととき</title>
+<title>黒川温泉</title>
 <style>
 :root{--bg:#09131b;--panel:#101d28;--line:#263b4b;--text:#f4f6f8;--muted:#aebdca;--blue:#3985f5;--gold:#d69a58}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Yu Gothic",Meiryo,sans-serif}button,input,select{font:inherit}button{cursor:pointer}
@@ -54,7 +54,7 @@ nav{display:flex;align-items:center;gap:26px;padding:0 clamp(18px,4vw,60px);heig
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 // Supabase Dashboard > Project Settings > API Keys から設定してください。
-const SUPABASE_URL = 'czvendpnoqinnkedmdkm';
+const SUPABASE_URL = 'https://czvendpnoqinnkedmdkm.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_gBasV_xFJuSE2180QokcRA_G1K16z4Z';
 const configured = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('PASTE_') && SUPABASE_PUBLISHABLE_KEY.startsWith('sb_publishable_') || (SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('PASTE_') && SUPABASE_PUBLISHABLE_KEY.startsWith('eyJ'));
 const supabase = configured ? createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY) : null;
